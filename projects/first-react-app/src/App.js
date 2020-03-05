@@ -1,52 +1,39 @@
 import React from 'react';
-// import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const blogObj = {
-    title: 'Heading',
-    desc: 'description'
-  }
+  const blogArr = [
+    {
+      id: 1, 
+      title: 'Heading 1',
+      desc: 'description'
+    },
+    {
+      id: 2, 
+      title: 'Heading 2',
+      desc: 'description'
+    },
+    {
+      id: 3, 
+      title: 'Heading 3',
+      desc: 'description'
+    }
+  ];
 
-  const styles =         {
-    margin: '16px',
-    padding: '16px',
-    boxSizing: 'border-box',
-    borderRadius: '5px',
-    boxShadow: '0 2px 5px green'
-  }
+  const blogCards = blogArr.map((item, pos) => {
+    console.log(item, pos);
+
+    return (
+      <div className="BlogCard" key={item.id}>
+        <h3>{item.title}</h3>
+        <p>{item.desc}</p>
+      </div>
+    )
+  });
 
   return (
     <div className="App">
-      {/* Inline style */}
-      <div style = {
-        {
-          margin: '16px',
-          padding: '16px',
-          boxSizing: 'border-box',
-          borderRadius: '5px',
-          boxShadow: '0 2px 5px red'
-        }
-      }>
-        <h3>{blogObj.title}</h3>
-        <p>{blogObj.desc}</p>
-      </div>
-
-      <hr></hr>
-
-      {/* Internal style */}
-      <div style = {styles}>
-        <h3>{blogObj.title}</h3>
-        <p>{blogObj.desc}</p>
-      </div>
-
-      <hr></hr>
-
-      {/* External style */}
-      <div className="BlogCard">
-        <h3>{blogObj.title}</h3>
-        <p>{blogObj.desc}</p>
-      </div>
+      {blogCards}
     </div>  
   );
 }
