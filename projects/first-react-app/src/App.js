@@ -18,7 +18,7 @@ function App() {
       title: 'Heading 3',
       desc: 'description'
     }
-  ];
+  ]
 
   const blogCards = blogArr.map((item, pos) => {
     console.log(item, pos);
