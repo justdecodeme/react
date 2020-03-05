@@ -3,22 +3,51 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  const blogObj = {
+    title: 'Heading',
+    desc: 'description'
+  }
+
+  const styles =         {
+    margin: '16px',
+    padding: '16px',
+    boxSizing: 'border-box',
+    borderRadius: '5px',
+    boxShadow: '0 2px 5px green'
+  }
+
   return (
-    React.createElement(
-      "div",
-      {
-        className: "App"
-      },
-      React.createElement("h2", null, "JSX behind the scene!"),
-      React.createElement(
-        "div",
+    <div className="App">
+      {/* Inline style */}
+      <div style = {
         {
-          className: "blog-card"
-        },
-        React.createElement("h1", null, "Heading"),
-        React.createElement("p", null, "Content")
-      )
-    )    
+          margin: '16px',
+          padding: '16px',
+          boxSizing: 'border-box',
+          borderRadius: '5px',
+          boxShadow: '0 2px 5px red'
+        }
+      }>
+        <h3>{blogObj.title}</h3>
+        <p>{blogObj.desc}</p>
+      </div>
+
+      <hr></hr>
+
+      {/* Internal style */}
+      <div style = {styles}>
+        <h3>{blogObj.title}</h3>
+        <p>{blogObj.desc}</p>
+      </div>
+
+      <hr></hr>
+
+      {/* External style */}
+      <div className="BlogCard">
+        <h3>{blogObj.title}</h3>
+        <p>{blogObj.desc}</p>
+      </div>
+    </div>  
   );
 }
 
