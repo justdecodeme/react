@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import BlogCard from './BlogCard';
+import BlogItem from './BlogCard';
 
 function App() {
   const blogArr = [
@@ -25,7 +25,7 @@ function App() {
     console.log(item, pos);
 
     return (
-      <BlogCard key={pos} title={item.title} desc={item.desc}></BlogCard>
+      <BlogItem key={pos} title={item.title} desc={item.desc} />
     )
   });
 
