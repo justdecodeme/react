@@ -1,5 +1,5 @@
 import React from 'react';
-import {dumpLogs} from './Utils';
+// import {dumpLogs} from './Utils';
 // import './BlogCard.css';
 import classes from './BlogCard.module.css';
 

@@ -15,6 +15,10 @@ import {isArrayEmpty} from './Utils';
 // import {checkIfArrayEmpty} from './Utils'; /* CAN'T USE ANY DIFFERENT NAME */
 
 class App extends Component {
+  state = {
+    showBlogs: true
+  }
+
   blogArr = [
     {
       id: 1, 
@@ -44,8 +48,9 @@ class App extends Component {
   showBlogs = true;
 
   onToggleBtnClick = () => {
-    this.showBlogs = !this.showBlogs;
-    console.log('showBlogs: ' + this.showBlogs);
+    this.setState({
+      showBlogs: !this.state.showBlogs
+    })
   }
 
   render() {
@@ -53,7 +58,7 @@ class App extends Component {
       <div className="App">
         <button onClick={this.onToggleBtnClick}>Toggle Blog Cards</button>
         <hr/>
-        {this.showBlogs ? this.blogCards : null}
+        {this.state.showBlogs ? this.blogCards : null}
       </div>  
     );
   }
