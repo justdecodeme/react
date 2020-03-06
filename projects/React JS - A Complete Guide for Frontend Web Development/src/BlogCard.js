@@ -1,5 +1,6 @@
 import React from 'react';
 import {dumpLogs} from './Utils';
+import './BlogCard.css';
 
 const BlogCard = (props) => {
     /* props.key is not mart of props object, it is used my react internaly */
