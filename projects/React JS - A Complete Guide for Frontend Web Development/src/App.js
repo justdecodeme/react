@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 
 /* ************** */
@@ -14,8 +14,8 @@ import {isArrayEmpty} from './Utils';
 // import {isArrayEmpty as checkIfArrayEmpty} from './Utils'; 
 // import {checkIfArrayEmpty} from './Utils'; /* CAN'T USE ANY DIFFERENT NAME */
 
-function App() {
-  const blogArr = [
+class App extends Component {
+  blogArr = [
     {
       id: 1, 
       title: 'Heading 1',
@@ -33,7 +33,7 @@ function App() {
     }
   ]
 
-  const blogCards = isArrayEmpty(blogArr) ? [] : blogArr.map((item, pos) => {
+  blogCards = isArrayEmpty(this.blogArr) ? [] : this.blogArr.map((item, pos) => {
     // console.log(item, pos);
 
     return (
@@ -41,11 +41,13 @@ function App() {
     )
   });
 
-  return (
-    <div className="App">
-      {blogCards}
-    </div>  
-  );
+  render() {
+    return (
+      <div className="App">
+        {this.blogCards}
+      </div>  
+    );
+  }
 }
 
 export default App;
