@@ -1,6 +1,18 @@
 import React from 'react';
 import './App.css';
-import BlogItem from './BlogCard';
+
+/* ************** */
+/* DEFAULT IMPORT */
+/* ************** */
+// import BlogCard from './BlogCard';
+import BlogItem from './BlogCard'; /* CAN USE ANY NAME */
+
+/* ************** */
+/* NAMED IMPORT */
+/* ************** */
+import {isArrayEmpty} from './Utils';
+// import {isArrayEmpty as checkIfArrayEmpty} from './Utils'; 
+// import {checkIfArrayEmpty} from './Utils'; /* CAN'T USE ANY DIFFERENT NAME */
 
 function App() {
   const blogArr = [
@@ -21,8 +33,8 @@ function App() {
     }
   ]
 
-  const blogCards = blogArr.map((item, pos) => {
-    console.log(item, pos);
+  const blogCards = isArrayEmpty(blogArr) ? [] : blogArr.map((item, pos) => {
+    // console.log(item, pos);
 
     return (
       <BlogItem key={pos} title={item.title} desc={item.desc} />
