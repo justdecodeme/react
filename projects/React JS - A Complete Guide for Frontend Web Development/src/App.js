@@ -41,10 +41,19 @@ class App extends Component {
     )
   });
 
+  showBlogs = true;
+
+  onToggleBtnClick = () => {
+    this.showBlogs = !this.showBlogs;
+    console.log('showBlogs: ' + this.showBlogs);
+  }
+
   render() {
     return (
       <div className="App">
-        {this.blogCards}
+        <button onClick={this.onToggleBtnClick}>Toggle Blog Cards</button>
+        <hr/>
+        {this.showBlogs ? this.blogCards : null}
       </div>  
     );
   }
