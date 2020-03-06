@@ -48,15 +48,21 @@ class App extends Component {
   showBlogs = true;
 
   onToggleBtnClick = () => {
-    this.setState({
-      showBlogs: !this.state.showBlogs
+    // this.setState({
+    //   showBlogs: !this.state.showBlogs
+    // })
+
+    this.setState((prevState, prevProps) => {
+      return {
+        showBlogs: !prevState.showBlogs /* return always updated value */
+      }
     })
   }
 
   render() {
     return (
       <div className="App">
-        <button onClick={this.onToggleBtnClick}>Toggle Blog Cards</button>
+        <button onClick={this.onToggleBtnClick}>{this.state.showBlogs ? 'Hide List' : 'Show List'}</button>
         <hr/>
         {this.state.showBlogs ? this.blogCards : null}
       </div>  
