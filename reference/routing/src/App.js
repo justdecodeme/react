@@ -2,10 +2,11 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Route } from "react-router-dom";
 
-import Header from "./Header";
-import Home from "./Home";
-import About from "./About";
-import Team from "./Team";
+import Header from "./Header/Header";
+import Home from "./Home/Home";
+import About from "./About/About";
+import Team from "./Team/Team";
+import Social from "./Team/Social";
 
 class App extends React.Component {
     render() {
@@ -24,6 +25,7 @@ class App extends React.Component {
                 <Route path="/" exact component={Home} />
                 <Route path="/about" exact component={About} />
                 <Route path="/team" exact component={Team} />
+                <Route path="/team/social" exact component={Social} />
             </BrowserRouter>
         );
     }
