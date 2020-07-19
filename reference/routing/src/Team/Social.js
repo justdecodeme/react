@@ -4,7 +4,7 @@ class Social extends React.Component {
     render() {
         return (
             <div>
-                <h3>Social</h3>
+                <h3>Social account of member</h3>
             </div>
         );
     }
