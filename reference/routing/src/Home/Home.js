@@ -9,6 +9,14 @@ class Home extends React.Component {
         return (
             <div>
                 <h1>Home</h1>
+                <button
+                    onClick={() => {
+                        // this.props.history.push({ pathname: "/about" });
+                        this.props.history.push("/about");
+                    }}
+                >
+                    About
+                </button>
             </div>
         );
     }
