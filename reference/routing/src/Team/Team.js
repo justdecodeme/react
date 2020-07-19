@@ -21,9 +21,9 @@ class Team extends React.Component {
         },
     ];
 
-    componentDidMount() {
-        // console.log(this.props);
-    }
+    // componentDidMount() {
+    //     console.log(this.props);
+    // }
 
     render() {
         const team = this.team.map((member) => {

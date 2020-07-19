@@ -21,7 +21,6 @@ class App extends React.Component {
                 <Switch>
                     <Route
                         path="/team/member/details/social"
-                        exact
                         component={Social}
                     />
                     <Route

@@ -35,6 +35,17 @@ class Member extends React.Component {
                 >
                     Social
                 </Link>
+                {" | "}
+                <Link
+                    to={{
+                        pathname:
+                            this.props.match.url +
+                            "/member/details/social/" +
+                            this.props.id,
+                    }}
+                >
+                    Social + Nested Route
+                </Link>
             </div>
         );
     }
