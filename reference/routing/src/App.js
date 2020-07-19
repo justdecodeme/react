@@ -12,10 +12,18 @@ class App extends React.Component {
         return (
             <BrowserRouter>
                 <Header />
+
                 <hr />
-                <Route path="/" exact render={() => <Home />} />
+
+                {/* <Route path="/" exact render={() => <Home />} />
                 <Route path="/about" exact render={() => <About />} />
-                <Route path="/team" exact render={() => <Team />} />
+                <Route path="/team" exact render={() => <Team />} /> */}
+
+                {/* Both are same */}
+
+                <Route path="/" exact component={Home} />
+                <Route path="/about" exact component={About} />
+                <Route path="/team" exact component={Team} />
             </BrowserRouter>
         );
     }
