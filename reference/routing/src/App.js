@@ -6,7 +6,7 @@ import Header from "./Header/Header";
 import Home from "./Home/Home";
 import About from "./About/About";
 import Team from "./Team/Team";
-import Social from "./Team/Social";
+import Details from "./Team/Details";
 
 class App extends React.Component {
     render() {
@@ -25,7 +25,11 @@ class App extends React.Component {
                 <Route path="/" exact component={Home} />
                 <Route path="/about" exact component={About} />
                 <Route path="/team" exact component={Team} />
-                <Route path="/team/social" exact component={Social} />
+                <Route
+                    path="/team/member/details/:id"
+                    exact
+                    component={Details}
+                />
             </BrowserRouter>
         );
     }
