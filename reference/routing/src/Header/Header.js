@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import "./Header.css";
 
@@ -10,15 +10,19 @@ class Header extends React.Component {
                 <ul>
                     <li>
                         {/* <a href="/">Home</a> */}
-                        <Link to="/">Home</Link>
+                        {/* <Link to="/">Home</Link> */}
+                        <NavLink to="/" exact>
+                            Home
+                        </NavLink>
                     </li>
                     <li>
                         {/* <a href="/about">About Us</a> */}
-                        <Link to="/about">About</Link>
+                        {/* <Link to="/about">About</Link> */}
+                        <NavLink to="/about">About</NavLink>
                     </li>
                     <li>
                         {/* <a href="/team">Team</a> */}
-                        <Link
+                        {/* <Link
                             to={{
                                 pathname: "/team",
                                 hash: "#india",
@@ -26,7 +30,21 @@ class Header extends React.Component {
                             }}
                         >
                             Team
-                        </Link>
+                        </Link> */}
+                        <NavLink
+                            to={{
+                                pathname: "/team",
+                                hash: "#india",
+                                search: "?region=bengalore",
+                            }}
+                            activeClassName="my-active"
+                            activeStyle={{
+                                color: "blue",
+                                fontWeight: "bold",
+                            }}
+                        >
+                            Team
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
