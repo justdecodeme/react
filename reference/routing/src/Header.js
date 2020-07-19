@@ -21,7 +21,7 @@ class Header extends React.Component {
                         <Link
                             to={{
                                 pathname: "/team",
-                                hash: "#id",
+                                hash: "#social",
                                 search: "?id=1",
                             }}
                         >
