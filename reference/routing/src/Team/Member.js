@@ -26,6 +26,15 @@ class Member extends React.Component {
                 >
                     Details
                 </Link>
+                {" | "}
+                <Link
+                    to={{
+                        pathname:
+                            this.props.match.url + "/member/details/social",
+                    }}
+                >
+                    Social
+                </Link>
             </div>
         );
     }
