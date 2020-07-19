@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Header.css";
+
 class Header extends React.Component {
     render() {
         return (
@@ -9,10 +11,10 @@ class Header extends React.Component {
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/page-1">PageOne</a>
+                        <a href="/about">About Us</a>
                     </li>
                     <li>
-                        <a href="/page-2">PageTwo</a>
+                        <a href="/team">Team</a>
                     </li>
                 </ul>
             </nav>
