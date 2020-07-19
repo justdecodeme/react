@@ -12,6 +12,7 @@ const Team = React.lazy(() => import("./Team/Team")); // Lazy loading "Team" com
 class App extends React.Component {
     render() {
         return (
+            // <BrowserRouter basename="/my-app">
             <BrowserRouter>
                 <Header />
                 <hr />
