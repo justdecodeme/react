@@ -9,6 +9,10 @@ import reducer from "./store/reducer";
 
 const store = createStore(reducer);
 
+store.subscribe(() => {
+    console.log("[subscribe]", store.getState());
+});
+
 ReactDOM.render(
     <Provider store={store}>
         <App />
