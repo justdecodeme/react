@@ -1,0 +1,4 @@
+Hooks Allow:
+------------
+- Add State to Function Components
+- Abstract Logic into Separate Functions
