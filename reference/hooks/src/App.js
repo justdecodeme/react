@@ -1,15 +1,17 @@
-import UseState from "./UseState";
+import UseStateBasics from "./UseStateBasics";
+import UseStateStarRating from "./UseStateStarRating";
 import UseEffectBasics from "./UseEffectBasics";
 import UseEffectFetch from "./UseEffectFetch";
 
 function App() {
 	return (
 		<div className="App">
-			<UseState />
-			<hr /> {/*******************/}
-			<hr /> {/*******************/}
+			<UseStateBasics />
+			<hr />
+			<UseStateStarRating />
+			<hr />
 			<UseEffectBasics />
-			<hr /> {/*******************/}
+			<hr />
 			<UseEffectFetch />
 		</div>
 	);

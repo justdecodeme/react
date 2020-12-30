@@ -35,7 +35,7 @@ export default function UseEffectBasics() {
 
 	return (
 		<div>
-			<h2>useEffect</h2>
+			<h1>useEffect Basics</h1>
 
 			<p id="count1"></p>
 			<p id="count2"></p>

@@ -25,7 +25,7 @@ export default function UseEffectFetch() {
 	console.log(data);
 	return (
 		<div>
-			<h2>useEffectFetch</h2>
+			<h1>useEffect Fetch</h1>
 
 			<ul>
 				{data.map((user) => (
