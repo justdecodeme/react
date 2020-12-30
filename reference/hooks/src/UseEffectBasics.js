@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function UseEffect() {
+export default function UseEffectBasics() {
 	const [a, setA] = useState(0);
 	const [b, setB] = useState(0);
 
@@ -47,5 +47,3 @@ function UseEffect() {
 		</div>
 	);
 }
-
-export default UseEffect;

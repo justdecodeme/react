@@ -1,6 +1,6 @@
-import "./App.css";
 import UseState from "./UseState";
-import UseEffect from "./UseEffect";
+import UseEffectBasics from "./UseEffectBasics";
+import UseEffectFetch from "./UseEffectFetch";
 
 function App() {
 	return (
@@ -8,7 +8,9 @@ function App() {
 			<UseState />
 			<hr /> {/*******************/}
 			<hr /> {/*******************/}
-			<UseEffect />
+			<UseEffectBasics />
+			<hr /> {/*******************/}
+			<UseEffectFetch />
 		</div>
 	);
 }
