@@ -1,7 +1,11 @@
 import UseStateBasics from "./UseStateBasics";
 import UseStateStarRating from "./UseStateStarRating";
+
 import UseEffectBasics from "./UseEffectBasics";
 import UseEffectFetch from "./UseEffectFetch";
+
+import UseReducerBasics from "./UseReducerBasics";
+import UseReducerToggle from "./UseReducerToggle";
 
 function App() {
 	return (
@@ -9,10 +13,17 @@ function App() {
 			<UseStateBasics />
 			<hr />
 			<UseStateStarRating />
+
 			<hr />
 			<UseEffectBasics />
 			<hr />
 			<UseEffectFetch />
+
+			<hr />
+			<UseReducerBasics />
+
+			<hr />
+			<UseReducerToggle />
 		</div>
 	);
 }

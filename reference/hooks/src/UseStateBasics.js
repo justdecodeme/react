@@ -17,6 +17,7 @@ function UseState() {
 				onChange={() => setChecked((checked) => !checked)}
 			/>
 			{checked ? "checked" : "not checked"}
+			<p>Note: Better way to do the same thing: "UseReducerToggle.js"</p>
 		</div>
 	);
 }
