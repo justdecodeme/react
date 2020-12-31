@@ -6,6 +6,9 @@ import UseEffectFetch from "./UseEffectFetch";
 
 import UseReducerBasics from "./UseReducerBasics";
 import UseReducerToggle from "./UseReducerToggle";
+import UseReducerDispatch from "./UseReducerDispatch";
+
+import UseRefBasics from "./UseRefBasics";
 
 function App() {
 	return (
@@ -21,9 +24,13 @@ function App() {
 
 			<hr />
 			<UseReducerBasics />
-
 			<hr />
 			<UseReducerToggle />
+			<hr />
+			<UseReducerDispatch />
+
+			<hr />
+			<UseRefBasics />
 		</div>
 	);
 }
