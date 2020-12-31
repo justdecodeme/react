@@ -1,10 +1,19 @@
-import React from "react";
+import React, { createContext, useContext } from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 
+export const UserContext = createContext();
+
+export const useUser = () => useContext(UserContext);
+
+const user = {
+	name: "Rakko",
+	dob: "13 May",
+};
+
 ReactDOM.render(
-	<React.StrictMode>
+	<UserContext.Provider value={user}>
 		<App />
-	</React.StrictMode>,
+	</UserContext.Provider>,
 	document.getElementById("root")
 );

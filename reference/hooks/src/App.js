@@ -11,7 +11,10 @@ import UseReducerDispatch from "./UseReducerDispatch";
 
 import UseRefTextColor from "./UseRefTextColor";
 
-import UseInputCustomHook from "./useInput/UseInputCustomHook";
+import UseInputTextColor from "./UseInputTextColor";
+
+import UseContextWithoutCustomHook from "./UseContextWithoutCustomHook";
+import UseContextWithCustomHook from "./UseContextWithCustomHook";
 
 function App() {
 	return (
@@ -21,24 +24,24 @@ function App() {
 			<UseStateStarRating />
 			<hr />
 			<UseStateTextColor />
-
 			<hr />
 			<UseEffectBasics />
 			<hr />
 			<UseEffectFetch />
-
 			<hr />
 			<UseReducerBasics />
 			<hr />
 			<UseReducerToggle />
 			<hr />
 			<UseReducerDispatch />
-
 			<hr />
 			<UseRefTextColor />
-
 			<hr />
-			<UseInputCustomHook />
+			<UseInputTextColor /> {/* custom hook */}
+			<hr />
+			<UseContextWithoutCustomHook />
+			<hr />
+			<UseContextWithCustomHook />
 		</div>
 	);
 }
