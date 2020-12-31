@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function UseState() {
+export default function UseState() {
 	/* useState() will return 2 things, initial value and function */
 	// const result = useState();
 	// console.log(result);
@@ -9,7 +9,7 @@ function UseState() {
 
 	return (
 		<div>
-			<h1>useState Basics</h1>
+			<h1>useState Toggle</h1>
 
 			<input
 				type="checkbox"
@@ -21,5 +21,3 @@ function UseState() {
 		</div>
 	);
 }
-
-export default UseState;

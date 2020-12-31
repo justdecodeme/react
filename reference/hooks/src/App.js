@@ -1,5 +1,6 @@
-import UseStateBasics from "./UseStateBasics";
+import UseStateToggle from "./UseStateToggle";
 import UseStateStarRating from "./UseStateStarRating";
+import UseStateTextColor from "./UseStateTextColor";
 
 import UseEffectBasics from "./UseEffectBasics";
 import UseEffectFetch from "./UseEffectFetch";
@@ -8,14 +9,18 @@ import UseReducerBasics from "./UseReducerBasics";
 import UseReducerToggle from "./UseReducerToggle";
 import UseReducerDispatch from "./UseReducerDispatch";
 
-import UseRefBasics from "./UseRefBasics";
+import UseRefTextColor from "./UseRefTextColor";
+
+import UseInputCustomHook from "./useInput/UseInputCustomHook";
 
 function App() {
 	return (
 		<div className="App">
-			<UseStateBasics />
+			<UseStateToggle />
 			<hr />
 			<UseStateStarRating />
+			<hr />
+			<UseStateTextColor />
 
 			<hr />
 			<UseEffectBasics />
@@ -30,7 +35,10 @@ function App() {
 			<UseReducerDispatch />
 
 			<hr />
-			<UseRefBasics />
+			<UseRefTextColor />
+
+			<hr />
+			<UseInputCustomHook />
 		</div>
 	);
 }
