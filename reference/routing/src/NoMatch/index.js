@@ -11,7 +11,7 @@ function NoMatch() {
 			</p>
 			<p>
 				<strong>Note: </strong>This page will come for any route which is note
-				defined.
+				{/* defined. */}
 			</p>
 			<Link to="/">Back to Home</Link>
 		</div>
