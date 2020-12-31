@@ -16,6 +16,8 @@ import UseInputTextColor from "./UseInputTextColor";
 import UseContextWithoutCustomHook from "./UseContextWithoutCustomHook";
 import UseContextWithCustomHook from "./UseContextWithCustomHook";
 
+import UseFetchUser from "./UseFetchUser";
+
 function App() {
 	return (
 		<div className="App">
@@ -42,6 +44,8 @@ function App() {
 			<UseContextWithoutCustomHook />
 			<hr />
 			<UseContextWithCustomHook />
+			<hr />
+			<UseFetchUser />
 		</div>
 	);
 }
