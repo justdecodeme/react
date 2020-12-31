@@ -21,6 +21,7 @@ import UseFetchUser from "./UseFetchUser";
 function App() {
 	return (
 		<div className="App">
+			<h1 style={{ textAlign: "center" }}>React Hooks</h1>
 			<UseStateToggle />
 			<hr />
 			<UseStateStarRating />
